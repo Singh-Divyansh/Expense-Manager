@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <center>
+        <h1>Expense Added Successfully🙂</h1>
+    </center>
+
+    <br><br>
+    
+    <form action="/index" method="post">
+        <button type="submit">Add Transaction</button>
+    </form>
+    <form action="/getTransactions" method="post">
+        <button type="submit">See Transactions</button>
+    </form>
+</div>
+
+<%- include("partials/footer") %>

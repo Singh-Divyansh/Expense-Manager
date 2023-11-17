@@ -1,0 +1,24 @@
+
+<%- include("partials/header") %>
+
+
+  <div class="container">
+    <h1>Add Transactions</h1>
+    <form action="/addTransaction" method="post">
+      <label for="description">Description:</label>
+      <input type="text" name="description" required>
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" required>
+      <label for="type">Type:</label>
+      <select name="type" required>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+  
+
+ 
+
+
+  <%- include("partials/footer") %>

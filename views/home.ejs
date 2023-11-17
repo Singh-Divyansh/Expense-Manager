@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <center>
+        <h1>Welcome to Money Tracker App</h1><br>
+        <h2>What do you want to do 👇</h2>
+    </center>
+    
+    <form action="/index" method="post">
+        <button type="submit">Add Transaction</button>
+    </form>
+    <form action="/getTransactions" method="post">
+        <button type="submit">See Transactions</button>
+    </form>
+</div>
+
+
+<%- include("partials/footer") %>
